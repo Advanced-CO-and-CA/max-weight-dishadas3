@@ -63,7 +63,7 @@ _main:
 	LDR R9, = WEIGHT        @R9 holds WEIGHT addr  (OUTPUT MAX WEIGHT)
 	STR R6, [R9]            @copy at WEIGHT from R6 which has max weight
         LDR R10, = NUM          @R10 holds NUM addr   (OUTPUT NUM)
-	STR R5, [R10]           @copy at WEIGHT from R6 (maximum weight)
+	STR R5, [R10]           @copy at NUM from R5 (number with max weight)
 	LDR R6, [R9]            @LOAD R6 AND CHECK FINAL VALUE AT WEIGHT
 	LDR R5, [R10]           @LOAD R5 AND CHECK FINAL VALUE AT NUM
 	swi 0x11
